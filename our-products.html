@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - uniTech Engineering Works</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/our-products.css">
+</head>
+<body class="bg-gradient-to-br from-indigo-50 via-white to-purple-50 min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img style="width: 60px; height: 60px;" src="public/images/Logo.png" alt="UniTech Logo">
+                    <div class="text-xl sm:text-2xl font-bold text-orange-600">UniTech Engineering Works</div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4 lg:space-x-8">
+                        <a href="home.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="our-products.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">Products</a>
+                        <a href="about.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="blogs.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">Blogs</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-gray-700 hover:text-blue-600 p-2" data-mobile-menu-button aria-expanded="false">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200" data-mobile-menu>
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="home.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">Home</a>
+                    <a href="our-products.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">Products</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">About</a>
+                    <a href="blogs.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">Blogs</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="h-16"></div>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Products Gallery Section -->
+        <section class="py-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold gradient-text mb-6 fade-in-up">Featured Products</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto fade-in-up delay-1">
+                    Each product is meticulously crafted with attention to detail and user experience
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card glass-effect rounded-3xl overflow-hidden group fade-in-up delay-1 scale-on-hover">
+                    <div class="aspect-square flex items-center justify-center relative gradient-shift">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <img class="w-full h-full object-contain" src="public/images/product1.png" alt="Portable Telescopic Truck Conveyer">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-bold text-gray-900 mb-3 text-lg">PORTABLE TELESCOPIC TRUCK CONVEYER</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            <ul>
+                                <li>length: 20-40 foot</li>
+                                <li>Product type: Conveyor</li>
+                                <li><a style="color: blue;" href="product.html?id=1">Know more</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card glass-effect rounded-3xl overflow-hidden group fade-in-up delay-2 scale-on-hover">
+                    <div class="aspect-square bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 flex items-center justify-center relative gradient-shift">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <img src="public/images/product2.png" alt="Pharmaceutical Multi Mill">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-bold text-gray-900 mb-3 text-lg">Pharmaceutical Multi Mill</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            <ul>
+                                <li>Capacity: 50-500 Kg/hr</li>
+                                <li>Type: Pharmaceutical Multi Mill</li>
+                                <li><a style="color: blue;" href="product.html?id=2">Know more</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card glass-effect rounded-3xl overflow-hidden group fade-in-up delay-3 scale-on-hover">
+                    <div class="aspect-square bg-gradient-to-br from-orange-400 via-amber-500 to-yellow-500 flex items-center justify-center relative gradient-shift">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <img src="public/images/product3.png" alt="Vertical Slat Chain Conveyor">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-bold text-gray-900 mb-3 text-lg">Vertical Slat Chain Conveyor</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            <ul>
+                                <li>Usage: Freight Elevator cargo Lift</li>
+                                <li>Type: Elevators</li>
+                                <li><a style="color: blue;" href="product.html?id=3">Know more</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card glass-effect rounded-3xl overflow-hidden group fade-in-up delay-4 scale-on-hover">
+                    <div class="aspect-square bg-gradient-to-br from-indigo-400 via-blue-500 to-cyan-500 flex items-center justify-center relative gradient-shift">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <img src="public/images/product4.png" alt="SS Locker Cabinet">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-bold text-gray-900 mb-3 text-lg">SS Locker Cabinet</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            <ul>
+                                <li>Thickness: 0.5-1.0 Millimeter (mm)</li>
+                                <li>Shape: Customized</li>
+                                <li><a style="color: blue;" href="product.html?id=4">Know more</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card glass-effect rounded-3xl overflow-hidden group fade-in-up delay-5 scale-on-hover">
+                    <div class="aspect-square flex items-center justify-center relative gradient-shift">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <img src="public/images/product5.png" alt="Chain Conveyor">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-bold text-gray-900 mb-3 text-lg">Chain Conveyor</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            <ul>
+                                <li>Material: Stainless Steel</li>
+                                <li>Length: 1-10 Foot (ft)</li>
+                                <li><a href="product.html?id=5" style="color: blue;">Know more</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card glass-effect rounded-3xl overflow-hidden group fade-in-up delay-6 scale-on-hover">
+                    <div class="aspect-square bg-gradient-to-br from-green-400 via-emerald-500 to-teal-600 flex items-center justify-center relative gradient-shift">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <img src="public/images/product6.png" alt="Roller Conveyor">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-bold text-gray-900 mb-3 text-lg">Roller Conveyor</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            <ul>
+                                <li>Material Stainless Steel</li>
+                                <li>Type: Roller Conveyor</li>
+                                <li><a style="color: blue;" href="product.html?id=6">Know more</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card glass-effect rounded-3xl overflow-hidden group fade-in-up delay-7 scale-on-hover">
+                    <div class="aspect-square bg-gradient-to-br from-violet-400 via-purple-500 to-indigo-600 flex items-center justify-center relative gradient-shift">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <img src="public/images/product7.png" alt="Gravity Roller Conveyor">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-bold text-gray-900 mb-3 text-lg">Gravity Roller Conveyor</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            <ul>
+                                <li>Usage Industrial</li>
+                                <li>Material Metal</li>
+                                <li><a style="color: blue;" href="product.html?id=7">Know more</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card glass-effect rounded-3xl overflow-hidden group fade-in-up delay-8 scale-on-hover">
+                    <div class="aspect-square flex items-center justify-center relative gradient-shift">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <img src="public/images/product8.png" alt="SS Floor Trolley">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-bold text-gray-900 mb-3 text-lg">SS Floor Trolley</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            <ul>
+                                <li>Steel Type: Stainless Steel</li>
+                                <li>Application: Floor Trolley</li>
+                                <li><a style="color: blue;" href="product.html?id=8">Know more</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- YouTube Videos Section -->
+        <section class="py-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold gradient-text mb-6 fade-in-up">Product Demonstrations</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto fade-in-up delay-1">
+                    Watch our products come to life with these comprehensive video demonstrations
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
+                <!-- YouTube Video 1 -->
+                <div class="glass-effect rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group fade-in-up delay-2 scale-on-hover">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fmd_FpYl_lU?si=4q7ZMXDIlp22Up7B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="w-3 h-3 bg-red-500 rounded-full mr-3 pulse-glow"></div>
+                            <span class="text-sm text-gray-500 uppercase tracking-wide font-medium">Live Demo</span>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-3 text-xl">Getting Started Guide</h3>
+                        <p class="text-gray-600 leading-relaxed">Complete walkthrough of setup and basic features to get you up and running in minutes</p>
+                    </div>
+                </div>
+
+                <!-- YouTube Video 2 -->
+                <div class="glass-effect rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group fade-in-up delay-3 scale-on-hover">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/K3okaOUlQLE?si=hQcbOkqnxTmrhrkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="w-3 h-3 bg-blue-500 rounded-full mr-3 pulse-glow"></div>
+                            <span class="text-sm text-gray-500 uppercase tracking-wide font-medium">Advanced</span>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-3 text-xl">Power User Features</h3>
+                        <p class="text-gray-600 leading-relaxed">Unlock advanced capabilities and learn pro tips to maximize your productivity</p>
+                    </div>
+                </div>
+
+                <!-- YouTube Video 3 -->
+                <div class="glass-effect rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group fade-in-up delay-4 scale-on-hover">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/p-jNSIjw9nU?si=G7bhKkvP2Hj6suk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="w-3 h-3 bg-green-500 rounded-full mr-3 pulse-glow"></div>
+                            <span class="text-sm text-gray-500 uppercase tracking-wide font-medium">Success Stories</span>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-3 text-xl">Customer Transformations</h3>
+                        <p class="text-gray-600 leading-relaxed">Real stories from customers who achieved remarkable results with our products</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Regular Videos Section -->
+        <section class="py-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold gradient-text mb-6 fade-in-up">Products Live Demo</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto fade-in-up delay-1">
+                    Live Demo of our master products, showcasing their features and capabilities
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Regular Video 1 -->
+                <div class="glass-effect rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 fade-in-up delay-2 scale-on-hover">
+                    <div class="video-container">
+                        <video controls class="w-full h-full object-cover">
+                            <source src="public/images/video1.mp4" type="video/mp4">
+                            <div class="flex items-center justify-center h-full bg-gradient-to-br from-emerald-500 via-teal-600 to-cyan-700 gradient-shift">
+                                <div class="text-center text-white p-8">
+                                    <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6 bounce-gentle">
+                                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="text-2xl font-bold mb-2">Foundation Setup</h4>
+                                    <p class="text-emerald-100">Master the basics in 15 minutes</p>
+                                </div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-3 py-1 rounded-full">Beginner</span>
+                            <span class="text-gray-500 text-sm">15 min</span>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-3 text-xl">Foundation Setup</h3>
+                        <p class="text-gray-600 leading-relaxed">Learn the essential setup process and configure your workspace for optimal performance</p>
+                    </div>
+                </div>
+
+                <!-- Regular Video 2 -->
+                <div class="glass-effect rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 fade-in-up delay-3 scale-on-hover">
+                    <div class="video-container">
+                        <video controls class="w-full h-full object-cover">
+                            <source src="public/images/video2.mp4" type="video/mp4">
+                            <div class="flex items-center justify-center h-full bg-gradient-to-br from-purple-500 via-indigo-600 to-blue-700 gradient-shift">
+                                <div class="text-center text-white p-8">
+                                    <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6 floating-animation" style="animation-delay: 1s;">
+                                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="text-2xl font-bold mb-2">Advanced Workflows</h4>
+                                    <p class="text-purple-100">Automation and efficiency</p>
+                                </div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-3 py-1 rounded-full">Intermediate</span>
+                            <span class="text-gray-500 text-sm">25 min</span>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-3 text-xl">Advanced Workflows</h3>
+                        <p class="text-gray-600 leading-relaxed">Discover powerful automation features and create efficient workflows that save hours</p>
+                    </div>
+                </div>
+
+                <!-- Regular Video 3 -->
+                <div class="glass-effect rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 fade-in-up delay-4 scale-on-hover">
+                    <div class="video-container">
+                        <video controls class="w-full h-full object-cover">
+                            <source src="public/images/video3.mp4" type="video/mp4">
+                            <div class="flex items-center justify-center h-full bg-gradient-to-br from-orange-500 via-red-600 to-pink-700 gradient-shift">
+                                <div class="text-center text-white p-8">
+                                    <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6 bounce-gentle" style="animation-delay: 2s;">
+                                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="text-2xl font-bold mb-2">Pro Tips & Tricks</h4>
+                                    <p class="text-orange-100">Expert-level techniques</p>
+                                </div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-orange-100 text-orange-800 text-xs font-medium px-3 py-1 rounded-full">Expert</span>
+                            <span class="text-gray-500 text-sm">20 min</span>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-3 text-xl">Pro Tips & Tricks</h3>
+                        <p class="text-gray-600 leading-relaxed">Master advanced techniques and hidden features that professionals use daily</p>
+                    </div>
+                </div>
+
+                <!-- Regular Video 4 -->
+                <div class="glass-effect rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 fade-in-up delay-5 scale-on-hover">
+                    <div class="video-container">
+                        <video controls class="w-full h-full object-cover">
+                            <source src="public/images/video4.mp4" type="video/mp4">
+                            <div class="flex items-center justify-center h-full bg-gradient-to-br from-rose-500 via-pink-600 to-purple-700 gradient-shift">
+                                <div class="text-center text-white p-8">
+                                    <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6 floating-animation" style="animation-delay: 3s;">
+                                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="text-2xl font-bold mb-2">Troubleshooting</h4>
+                                    <p class="text-rose-100">Quick problem solving</p>
+                                </div>
+                            </div>
+                        </video>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-rose-100 text-rose-800 text-xs font-medium px-3 py-1 rounded-full">Support</span>
+                            <span class="text-gray-500 text-sm">12 min</span>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-3 text-xl">Troubleshooting Guide</h3>
+                        <p class="text-gray-600 leading-relaxed">Quick solutions to common issues and how to get help when you need it</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 sm:py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <div class="text-xl sm:text-2xl font-bold text-blue-400 mb-3 sm:mb-4">UniTech Engineering Works
+                    </div>
+
+                    <p class="text-sm sm:text-base text-gray-300">Leading provider of best Conveying solutions.</p>
+                    <p class="text-sm sm:text-base text-gray-300">Precision. Performance. Reliability</p>
+                </div>
+                <div>
+                    <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Products</h3>
+                    <ul class="space-y-1 sm:space-y-2 text-gray-300">
+                        <li><a href="https://www.unitechengineeringworks.com/portable-telescopic-truck-conveyer-1792195.html" class="text-sm sm:text-base hover:text-white transition-colors">Portable Telescopic Truck Conveyer</a></li>
+                              
+                        <li><a href="https://www.unitechengineeringworks.com/packing-conveyor-432358.html" class="text-sm sm:text-base hover:text-white transition-colors">Packing
+                                Conveyer</a></li>
+                        <li><a href="https://www.unitechengineeringworks.com/ss-dustbin-paddle-type-1379913.html" class="text-sm sm:text-base hover:text-white transition-colors">SS Dustbin - Paddle Type</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Contact Us</h3>
+                    <ul class="space-y-1 sm:space-y-2 text-gray-300">
+                        <li class="text-sm sm:text-base hover:text-white transition-colors">+91 08045801424</li>
+                        <li class="text-sm sm:text-base hover:text-white transition-colors">ED-55, Tagore Garden, <br>
+                            New Delhi-110027, <br>
+                            Delhi, India </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-300">
+                <p class="text-sm sm:text-base">&copy; 2025 UniTech Engineering Works. All rights reserved. <a style="color: blue;"
+                        href="https://www.tradeindia.com/about-us/terms/terms_01.html">Terms of use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/our-products.js"></script>
+</body>
+</html>

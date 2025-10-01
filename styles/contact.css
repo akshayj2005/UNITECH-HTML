@@ -1,0 +1,388 @@
+/* Contact Page Styles */
+
+/* Card Shadow */
+.card-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+}
+
+.card-shadow:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Demo Styles */
+.form-demo {
+    position: relative;
+    overflow: hidden;
+}
+
+.form-demo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.form-demo:hover::before {
+    left: 100%;
+}
+
+/* Social Media Icons */
+.social-icon {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.social-icon:hover::before {
+    left: 100%;
+}
+
+/* Form Input Styles */
+.form-input {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.form-input:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.form-input:focus + label {
+    color: #3b82f6;
+    transform: translateY(-2px);
+}
+
+/* Contact Card Animations */
+.contact-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.05), transparent);
+    transition: left 0.5s ease;
+}
+
+.contact-card:hover::before {
+    left: 100%;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Animations */
+.contact-icon {
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Form Validation Styles */
+.form-input.error {
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-input.success {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.success-message {
+    color: #10b981;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Button Hover Effects */
+.submit-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.submit-btn:hover::before {
+    left: 100%;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Success Message Animation */
+.success-message {
+    animation: slideInDown 0.5s ease;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form Field Focus Effects */
+.form-field {
+    position: relative;
+}
+
+.form-field label {
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0.75rem;
+    left: 1rem;
+    color: #6b7280;
+    pointer-events: none;
+    transform-origin: left top;
+}
+
+.form-field input:focus + label,
+.form-field textarea:focus + label,
+.form-field select:focus + label {
+    transform: translateY(-1.5rem) scale(0.75);
+    color: #3b82f6;
+}
+
+.form-field input:not(:placeholder-shown) + label,
+.form-field textarea:not(:placeholder-shown) + label,
+.form-field select:not([value=""]) + label {
+    transform: translateY(-1.5rem) scale(0.75);
+    color: #6b7280;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-card {
+        margin-bottom: 1rem;
+    }
+    
+    .social-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .form-demo {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .grid.lg\\:grid-cols-2 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-card {
+        padding: 1rem;
+    }
+    
+    .form-demo {
+        padding: 1rem;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    .contact-card,
+    .social-icon,
+    .form-input,
+    .submit-btn,
+    .contact-icon {
+        transition: none;
+    }
+    
+    .form-demo::before,
+    .social-icon::before,
+    .contact-card::before,
+    .submit-btn::before {
+        display: none;
+    }
+    
+    .loading::after {
+        animation: none;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .card-shadow {
+        border: 2px solid #000;
+    }
+    
+    .form-input {
+        border: 2px solid #000;
+    }
+    
+    .form-input:focus {
+        border-color: #0000ff;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .social-icon,
+    .form-demo::before,
+    .social-icon::before,
+    .contact-card::before,
+    .submit-btn::before {
+        display: none;
+    }
+    
+    .contact-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+    
+    .form-demo {
+        break-inside: avoid;
+    }
+}
+
+/* Focus Management */
+.keyboard-navigation .form-input:focus,
+.keyboard-navigation .submit-btn:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Form Validation States */
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-group.has-error .form-input {
+    border-color: #ef4444;
+}
+
+.form-group.has-success .form-input {
+    border-color: #10b981;
+}
+
+.form-group .error-message {
+    display: none;
+}
+
+.form-group.has-error .error-message {
+    display: block;
+}
+
+.form-group .success-message {
+    display: none;
+}
+
+.form-group.has-success .success-message {
+    display: block;
+}
+
+/* Animation for form submission */
+.form-submitting {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.form-submitting .submit-btn {
+    background-color: #6b7280;
+    cursor: not-allowed;
+}
+
+/* Custom scrollbar for textarea */
+textarea::-webkit-scrollbar {
+    width: 6px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}

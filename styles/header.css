@@ -1,0 +1,222 @@
+/* Header Component Styles */
+
+/* Navigation bar styling */
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+}
+
+/* Logo styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.company-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ea580c; /* orange-600 */
+    margin-left: 0.5rem;
+}
+
+@media (min-width: 640px) {
+    .company-name {
+        font-size: 1.5rem;
+    }
+}
+
+/* Desktop navigation */
+.desktop-nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .desktop-nav {
+        display: block;
+    }
+}
+
+.nav-links {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .nav-links {
+        gap: 2rem;
+    }
+}
+
+.nav-link {
+    color: #374151; /* gray-700 */
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #2563eb; /* blue-600 */
+}
+
+/* Mobile menu button */
+.mobile-menu-button {
+    display: block;
+    color: #374151;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.mobile-menu-button:hover {
+    color: #2563eb;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu-button {
+        display: none;
+    }
+}
+
+/* Mobile menu */
+.mobile-menu {
+    display: none;
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+}
+
+.mobile-menu.show {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none !important;
+    }
+}
+
+.mobile-menu-links {
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.mobile-nav-link {
+    color: #374151;
+    display: block;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+    color: #2563eb;
+}
+
+/* Spacer for fixed header */
+.header-spacer {
+    height: 4rem; /* 64px */
+}
+
+/* Smooth transitions */
+* {
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Focus states for accessibility */
+.nav-link:focus,
+.mobile-nav-link:focus,
+.mobile-menu-button:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+/* Active state for current page */
+.nav-link.active {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.mobile-nav-link.active {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+/* Animation for mobile menu toggle */
+.mobile-menu {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-menu.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Hover effects for better UX */
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #2563eb;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Responsive logo sizing */
+@media (max-width: 480px) {
+    .logo-image {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .company-name {
+        font-size: 1rem;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .nav-link,
+    .mobile-nav-link {
+        border: 1px solid transparent;
+    }
+    
+    .nav-link:hover,
+    .mobile-nav-link:hover {
+        border-color: #2563eb;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none;
+    }
+    
+    .mobile-menu {
+        transition: none;
+    }
+}

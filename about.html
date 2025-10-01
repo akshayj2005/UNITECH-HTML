@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - uniTech Engineering Works</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/about.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img style="width: 60px; height: 60px;" src="public/images/Logo.png" alt="UniTech Logo">
+                    <div class="text-xl sm:text-2xl font-bold text-orange-600">UniTech Engineering Works</div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4 lg:space-x-8">
+                        <a href="home.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="our-products.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">Products</a>
+                        <a href="about.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="blogs.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">Blogs</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-gray-700 hover:text-blue-600 p-2" data-mobile-menu-button aria-expanded="false">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200" data-mobile-menu>
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="home.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">Home</a>
+                    <a href="our-products.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">Products</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">About</a>
+                    <a href="blogs.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">Blogs</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="h-16"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg pt-16 pb-20 relative overflow-hidden">
+        <!-- Animated Engineering Boxes Background -->
+        <div class="absolute inset-0 z-0 engineering-bg"></div>
+        <!-- Overlay for dark engineering vibe -->
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900 opacity-80 z-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-20">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 fade-in">
+                    About <span class="text-orange-500">Our Company</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto fade-in stagger-delay-1">
+                We place in practice the basic essential attributes: integrity, fairness and honesty in our working culture. Our company believes that client satisfaction is the flowering and the fruits that generate employee, supplier and community benefits, as well as exceed customer expectations through continuous improvement in quality, service, economy and productivity.    
+                </p>
+            </div>
+        </div>
+        <!-- Floating geometric shapes for engineering vibe -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-orange-500 opacity-20 rounded-full floating z-20"></div>
+        <div class="absolute bottom-20 right-10 w-16 h-16 bg-blue-500 opacity-20 transform rotate-45 floating z-20" style="animation-delay: -2s;"></div>
+        <div class="absolute top-1/2 left-1/4 w-12 h-12 bg-green-500 opacity-20 rounded-full floating z-20" style="animation-delay: -4s;"></div>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="slide-in-left">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                        Pioneering Industrial Excellence Since 2001
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Unitech Engineering Works, is an acknowledged manufacturer and supplier of Pharmaceutical Machines and Stainless Steel Accessories for different pharmaceutical sections viz. Granulation, Liquid and Packaging. Our products meet your automation needs perfectly, and provide flexible solutions for industrial, packaging, and other needs. 
+                        </p>
+                        <p>For instance, our Capsule Filling Machine, Tablet Coating Equipment, Pharmaceutical Blister Packaging Machine is designed for maximum flexibility, automation functionality and easy integration.
+  </p>
+                  
+                    <div class="flex flex-wrap gap-4">
+                        <span class="px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">Best Customer Satisfaction</span>
+                        <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Global Reach</span>
+                        <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">24/7 Support</span>
+                    </div>
+                </div>
+                <div class="slide-in-right">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl p-8 pulse-glow">
+                            <svg class="w-full h-64 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                                <path d="M9 12l2 2 4-4" stroke="white" stroke-width="2" fill="none"/>
+                            </svg>
+                            <h3 class="text-white text-2xl font-bold mt-4 text-center">Quality Assured</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="py-20 bg-slate-800">
+         <div class="conveyor-background">
+            <div class="bg-conveyor-belt"></div>
+            <div class="bg-conveyor-items">
+                <div class="bg-conveyor-item" style="left: 0%;"></div>
+                <div class="bg-conveyor-item" style="left: 10%;"></div>
+                <div class="bg-conveyor-item" style="left: 20%;"></div>
+                <div class="bg-conveyor-item" style="left: 30%;"></div>
+                <div class="bg-conveyor-item" style="left: 40%;"></div>
+                <div class="bg-conveyor-item" style="left: 50%;"></div>
+                <div class="bg-conveyor-item" style="left: 60%;"></div>
+                <div class="bg-conveyor-item" style="left: 70%;"></div>
+                <div class="bg-conveyor-item" style="left: 80%;"></div>
+                <div class="bg-conveyor-item" style="left: 90%;"></div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="scale-in stagger-delay-1">
+                    <div class="counter" data-target="24">0</div>
+                    <p class="text-gray-300 text-lg font-medium">Years Experience</p>
+                </div>
+                <div class="scale-in stagger-delay-2">
+                    <div class="counter" data-target="6">0</div>
+                    <p class="text-gray-300 text-lg font-medium">No of Staff</p>
+                </div>
+                <div class="scale-in stagger-delay-3">
+                    <div class="counter" data-target="1">0</div>
+                    <p class="text-gray-300 text-lg font-medium">Company Branch</p>
+                </div>
+                <div class="scale-in stagger-delay-4">
+                    <div class="counter" data-target="1">0</div>
+                    <p class="text-gray-300 text-lg font-medium">No of production units</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Mission & Vision</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Driving industrial transformation through innovative solutions and sustainable practices.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="bg-white rounded-2xl p-8 shadow-lg slide-in-left">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                     To provide excellence in all our projects through prime quality and take continuous steps towards improvement. Our consistent efforts have resulted in many innovative additions to our product list as per the emerging demand of customers in a more dynamic and competitive business.    
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg slide-in-right">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To be the global leader in industrial Converying and Manufacturing technology, setting new standards for innovation, sustainability, and operational excellence. We envision a future where smart manufacturing transforms industries and creates lasting value for society.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Leadership Team</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Meet the visionary leaders driving our company's success and innovation.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center scale-in stagger-delay-1">
+                    <div class="w-32 h-32 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <span class="text-white text-4xl font-bold">JD</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">John Davidson</h3>
+                    <p class="text-orange-500 font-medium mb-3">Chief Executive Officer</p>
+                    <p class="text-gray-600 text-sm">25+ years in industrial manufacturing with expertise in strategic planning and global operations.</p>
+                </div>
+                
+                <div class="text-center scale-in stagger-delay-2">
+                    <div class="w-32 h-32 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <span class="text-white text-4xl font-bold">SM</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Sarah Mitchell</h3>
+                    <p class="text-blue-500 font-medium mb-3">Chief Technology Officer</p>
+                    <p class="text-gray-600 text-sm">Leading innovation in automation technology and digital transformation initiatives.</p>
+                </div>
+                
+                <div class="text-center scale-in stagger-delay-3">
+                    <div class="w-32 h-32 bg-gradient-to-br from-green-400 to-green-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <span class="text-white text-4xl font-bold">MR</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Michael Rodriguez</h3>
+                    <p class="text-green-500 font-medium mb-3">Chief Operations Officer</p>
+                    <p class="text-gray-600 text-sm">Expert in lean manufacturing and process optimization with a focus on quality excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-white mb-4">Our Core Values</h2>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                    The principles that guide everything we do and define who we are as a company.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center slide-in-left stagger-delay-1">
+                    <div class="w-20 h-20 bg-orange-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Innovation</h3>
+                    <p class="text-gray-300 text-sm">Continuously pushing boundaries to develop cutting-edge solutions.</p>
+                </div>
+                
+                <div class="text-center slide-in-left stagger-delay-2">
+                    <div class="w-20 h-20 bg-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Quality</h3>
+                    <p class="text-gray-300 text-sm">Delivering excellence in every product and service we provide.</p>
+                </div>
+                
+                <div class="text-center slide-in-right stagger-delay-3">
+                    <div class="w-20 h-20 bg-green-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Integrity</h3>
+                    <p class="text-gray-300 text-sm">Building trust through honest and transparent business practices.</p>
+                </div>
+                
+                <div class="text-center slide-in-right stagger-delay-4">
+                    <div class="w-20 h-20 bg-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Sustainability</h3>
+                    <p class="text-gray-300 text-sm">Committed to environmental responsibility and sustainable practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 sm:py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <div class="text-xl sm:text-2xl font-bold text-blue-400 mb-3 sm:mb-4">UniTech Engineering Works
+                    </div>
+
+                    <p class="text-sm sm:text-base text-gray-300">Leading provider of best Conveying solutions.</p>
+                    <p class="text-sm sm:text-base text-gray-300">Precision. Performance. Reliability</p>
+                </div>
+                <div>
+                    <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Products</h3>
+                    <ul class="space-y-1 sm:space-y-2 text-gray-300">
+                        <li><a href="https://www.unitechengineeringworks.com/portable-telescopic-truck-conveyer-1792195.html" class="text-sm sm:text-base hover:text-white transition-colors">Portable Telescopic Truck Conveyer</a></li>
+                              
+                        <li><a href="https://www.unitechengineeringworks.com/packing-conveyor-432358.html" class="text-sm sm:text-base hover:text-white transition-colors">Packing
+                                Conveyer</a></li>
+                        <li><a href="https://www.unitechengineeringworks.com/ss-dustbin-paddle-type-1379913.html" class="text-sm sm:text-base hover:text-white transition-colors">SS Dustbin - Paddle Type</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Contact Us</h3>
+                    <ul class="space-y-1 sm:space-y-2 text-gray-300">
+                        <li class="text-sm sm:text-base hover:text-white transition-colors">+91 08045801424</li>
+                        <li class="text-sm sm:text-base hover:text-white transition-colors">ED-55, Tagore Garden, <br>
+                            New Delhi-110027, <br>
+                            Delhi, India </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-300">
+                <p class="text-sm sm:text-base">&copy; 2025 UniTech Engineering Works. All rights reserved. <a style="color: blue;"
+                        href="https://www.tradeindia.com/about-us/terms/terms_01.html">Terms of use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/about.js"></script>
+</body>
+</html>

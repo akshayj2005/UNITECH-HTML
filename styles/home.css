@@ -1,0 +1,283 @@
+/* Home Page Styles */
+
+/* Hero Background */
+.hero-bg {
+    background-image: url('../public/images/heroimg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Animations */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse-slow {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-infinite {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 3s ease-in-out infinite;
+}
+
+.animate-scroll {
+    animation: scroll-infinite 30s linear infinite;
+    white-space: nowrap;
+    display: flex;
+    width: max-content;
+}
+
+/* Ensure the container doesn't break the layout */
+#customers-container {
+    display: flex;
+    white-space: nowrap;
+    min-width: 200%;
+}
+
+/* Customer card styling */
+.customer-card {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    padding: 0 1.5rem;
+    flex-shrink: 0;
+    margin-right: 2rem;
+}
+
+@media (min-width: 640px) {
+    .customer-card {
+        height: 5rem;
+        padding: 0 2rem;
+        margin-right: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .customer-card {
+        height: 6rem;
+    }
+}
+
+.customer-name {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #4b5563;
+    white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+    .customer-name {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .customer-name {
+        font-size: 1.25rem;
+    }
+}
+
+/* Delay classes */
+.delay-[0ms] { animation-delay: 0ms; }
+.delay-[200ms] { animation-delay: 200ms; }
+.delay-[400ms] { animation-delay: 400ms; }
+.delay-[600ms] { animation-delay: 600ms; }
+
+/* Review card styles */
+.review-card {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Star rating styles */
+.star {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.125rem;
+    }
+}
+
+/* Glass effect for service cards */
+.backdrop-blur-md {
+    backdrop-filter: blur(12px);
+}
+
+/* Hover effects */
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+/* Custom scrollbar for mobile reviews */
+#mobileReviewsContainer::-webkit-scrollbar {
+    width: 4px;
+}
+
+#mobileReviewsContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+#mobileReviewsContainer::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+#mobileReviewsContainer::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Success/Error message styles */
+.message {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.message.success {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.message.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+/* Button hover effects */
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Form focus states */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Carousel navigation */
+.carousel-nav {
+    transition: all 0.3s ease;
+}
+
+.carousel-nav:hover {
+    background-color: rgba(59, 130, 246, 0.9);
+    transform: scale(1.1);
+}
+
+/* Dot indicators */
+.dot {
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background-color: #3b82f6;
+    transform: scale(1.2);
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .mobile-menu {
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .mobile-menu.open {
+        transform: translateY(0);
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    .animate-fade-in-up,
+    .animate-pulse-slow,
+    .animate-scroll {
+        animation: none;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .review-card {
+        border: 2px solid #000;
+    }
+    
+    .star {
+        border: 1px solid #000;
+    }
+}
+
+/* Print styles */
+@media print {
+    .hero-bg {
+        background: none;
+        color: #000;
+    }
+    
+    .animate-scroll {
+        animation: none;
+    }
+}

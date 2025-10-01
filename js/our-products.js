@@ -309,8 +309,8 @@ function initializeProductInteractions() {
 
 // Initialize video interactions
 function initializeVideoInteractions() {
-    // Add click handlers to video cards
-    const videoCards = document.querySelectorAll('.glass-effect');
+    // Add click handlers ONLY to video cards (exclude product cards)
+    const videoCards = document.querySelectorAll('.glass-effect:not(.product-card)');
     videoCards.forEach((card, index) => {
         const video = videos[index];
         if (video) {

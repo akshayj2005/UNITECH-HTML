@@ -176,7 +176,7 @@ function renderProduct(product) {
         <img src="${heroImg}" alt="${product.name}" class="w-full h-80 object-contain">
       </div>
       <div>
-        <h1 class="product-title">${product.name}</h1>
+        <h1 class="product-title"><strong>${product.name}</strong></h1>
         <p class="product-subtitle">${product.description.substring(0, 120)}…</p>
         <div class="price-moq-box">
           <p><strong>Price:</strong> ${product.price}</p>

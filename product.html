@@ -1,89 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details - UniTech Engineering Works</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail — UniTech Engineering Works</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles/our-products.css">
-    <link rel="icon" href="public/images/Logo.png">
-    <meta name="description" content="Detailed view of UniTech Engineering Works products">
-    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="styles/our-products.css" />
+    <!-- Fallback meta description if JS fails -->
+    <meta name="description" content="" class="meta-description-fallback" />
 </head>
 <body class="bg-gradient-to-br from-indigo-50 via-white to-purple-50 min-h-screen">
 
+    <!-- Navigation (same as your other page) -->
     <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <a href="home.html" class="flex items-center">
-                        <img style="width: 60px; height: 60px;" src="public/images/Logo.png" alt="UniTech Logo">
-                        <div class="text-xl sm:text-2xl font-bold text-orange-600 ml-2">UniTech Engineering Works</div>
-                    </a>
+                    <img style="width: 60px; height: 60px;" src="public/images/Logo.png" alt="UniTech Logo" />
+                    <div class="text-xl sm:text-2xl font-bold text-orange-600 ml-2">UniTech Engineering Works</div>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4 lg:space-x-8">
-                        <a href="home.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">Home</a>
-                        <a href="our-products.html" class="text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">Products</a>
-                        <a href="about.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">About</a>
-                        <a href="blogs.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">Blogs</a>
-                        <a href="contact.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                        <a href="home.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="our-products.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium">Products</a>
+                        <a href="about.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium">About</a>
+                        <a href="blogs.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium">Blogs</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-blue-600 px-2 lg:px-3 py-2 text-sm font-medium">Contact</a>
                     </div>
                 </div>
                 <div class="md:hidden">
-                    <button id="mobileMenuBtn" class="text-gray-700 hover:text-blue-600 p-2" aria-expanded="false">
+                    <button id="mobileMenuBtn" class="text-gray-700 hover:text-blue-600 p-2">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
             </div>
             <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="home.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">Home</a>
-                    <a href="our-products.html" class="text-blue-600 block px-3 py-2 text-base font-medium transition-colors">Products</a>
-                    <a href="about.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">About</a>
-                    <a href="blogs.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">Blogs</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">Contact</a>
+                    <a href="home.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Home</a>
+                    <a href="our-products.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Products</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">About</a>
+                    <a href="blogs.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Blogs</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
-
     <div class="h-16"></div>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <!-- Hero/Product summary -->
         <section id="product-hero" class="bg-white rounded-3xl shadow-xl p-6 sm:p-10">
-            <a href="our-products.html" class="text-blue-600 hover:underline text-sm">← Back to Products</a>
-            <div id="product-summary" class="mt-4 grid md:grid-cols-2 gap-8">
-                <!-- filled by JS -->
+            <a href="our-products.html" class="back-link">← Back to Products</a>
+            <div id="product-summary" class="mt-6 grid md:grid-cols-2 gap-8">
+                <!-- Rendered by JS -->
             </div>
         </section>
 
-        <!-- Gallery and details -->
         <section class="mt-8 grid lg:grid-cols-3 gap-8">
             <div class="lg:col-span-2">
                 <div id="product-gallery" class="bg-white rounded-3xl shadow-xl p-6 sm:p-8">
-                    <!-- filled by JS -->
+                    <!-- JS gallery -->
                 </div>
                 <div id="product-description" class="bg-white rounded-3xl shadow-xl p-6 sm:p-8 mt-8">
-                    <!-- filled by JS -->
+                    <!-- JS description -->
                 </div>
             </div>
             <aside class="lg:col-span-1">
                 <div id="product-specs" class="bg-white rounded-3xl shadow-xl p-6 sm:p-8">
-                    <!-- filled by JS -->
+                    <!-- JS specs -->
                 </div>
                 <div id="product-cta" class="bg-white rounded-3xl shadow-xl p-6 sm:p-8 mt-8">
-                    <!-- filled by JS -->
+                    <!-- JS CTA -->
                 </div>
             </aside>
         </section>
 
-        <!-- Related products -->
-        <section id="related-products" class="mt-10">
-            <!-- filled by JS -->
+        <section id="related-products" class="mt-10 related-products-section">
+            <!-- JS related products -->
         </section>
     </main>
 
@@ -91,23 +86,23 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 <div class="sm:col-span-2 lg:col-span-1">
-                    <div class="text-xl sm:text-2xl font-bold text-blue-400 mb-3 sm:mb-4">UniTech Engineering Works</div>
+                    <div class="text-xl sm:text-2xl font-bold text-blue-400 mb-3">UniTech Engineering Works</div>
                     <p class="text-sm sm:text-base text-gray-300">Leading provider of best Conveying solutions.</p>
                     <p class="text-sm sm:text-base text-gray-300">Precision. Performance. Reliability</p>
                 </div>
                 <div>
-                    <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Quick Links</h3>
+                    <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Products</h3>
                     <ul class="space-y-1 sm:space-y-2 text-gray-300">
-                        <li><a href="home.html" class="hover:text-white transition-colors">Home</a></li>
-                        <li><a href="our-products.html" class="hover:text-white transition-colors">Products</a></li>
-                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="product.html?id=1" class="hover:text-white transition-colors">Portable Telescopic Truck Conveyer</a></li>
+                        <li><a href="product.html?id=2" class="hover:text-white transition-colors">Pharmaceutical Multi Mill</a></li>
+                        <li><a href="product.html?id=3" class="hover:text-white transition-colors">Vertical Slat Chain Conveyor</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Contact Us</h3>
                     <ul class="space-y-1 sm:space-y-2 text-gray-300">
-                        <li class="text-sm sm:text-base hover:text-white transition-colors">+91 08045801424</li>
-                        <li class="text-sm sm:text-base hover:text-white transition-colors">ED-55, Tagore Garden, <br>New Delhi-110027, <br>Delhi, India</li>
+                        <li class="text-sm sm:text-base hover:text-white">+91 08045801424</li>
+                        <li class="text-sm sm:text-base hover:text-white">ED-55, Tagore Garden, <br>New Delhi‑110027, <br>Delhi, India</li>
                     </ul>
                 </div>
             </div>
@@ -121,5 +116,3 @@
     <script defer src="js/product.js"></script>
 </body>
 </html>
-
-
